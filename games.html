@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dil Dil Dosti Cinema</title>
+    <link rel="shortcut icon" href="./img-src/hero.png" type="image/x-icon" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="flex justify-around items-center p-6">
+      <div class="hover:text-red-400 text-3xl font-bold">
+        <a href="">DDC</a>
+      </div>
+      <ul class="hidden md:flex space-x-6">
+        <li>
+          <a
+            href="#"
+            class="hover:text-red-400 text-gray-700 hover:font-semibold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="about_us.html"
+            class="hover:text-red-400 text-gray-700 hover:font-semibold"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="games.html"
+            class="hover:text-red-400 text-gray-700 hover:font-semibold"
+            >Games</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="hover:text-red-400 text-gray-700 hover:font-semibold"
+            >Recommendations</a
+          >
+        </li>
+      </ul>
+      <div class="flex items-center space-x-4">
+        <button
+          class="bg-red-400 hover:bg-white text-white px-4 py-2 rounded-lg hover:text-red-400 border duration-500 hover:border-red-400"
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar srction Ends -->
+    <section class="w-full py-6">
+      <div class="py-3">
+        <h1
+          class="text-red-400 text-center text-4xl md:text-5xl font-bold tracking-wide uppercase"
+        >
+          DDC Games
+        </h1>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-12 py-6">
+        <!-- Guess the Frame -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between text-center transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
+        >
+          <h5 class="text-lg font-bold uppercase">Guess the Frame</h5>
+          <p class="text-gray-700 mt-2">
+            Test your movie knowledge by guessing the movie from a single frame!
+          </p>
+          <a
+            href="./guess-the-frame.html"
+            class="mt-4 bg-red-400 text-white px-4 py-2 hover:text-red-400 border hover:border-red-400 rounded-md hover:bg-white duration-500 transition"
+          >
+            Play Now
+          </a>
+        </div>
+
+        <!-- Guess the Movie Name from Dialogues -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between text-center transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
+        >
+          <h5 class="text-lg font-bold uppercase">
+            Guess the Movie Name from Dialogues
+          </h5>
+          <p class="text-gray-700 mt-2">
+            Can you name the movie just by hearing a famous dialogue?
+          </p>
+          <a
+            href="./guess-the-movie-from-dialouges.html"
+            class="mt-4 bg-red-400 text-white px-4 py-2 rounded-md hover:text-red-400 border hover:border-red-400 hover:bg-white duration-500 transition"
+          >
+            Play Now
+          </a>
+        </div>
+
+        <!-- More Games Coming Soon -->
+        <div
+          class="bg-white shadow-md rounded-xl p-6 flex flex-col justify-between text-center transform transition duration-300 ease-in-out hover:shadow-2xl hover:scale-105"
+        >
+          <h5 class="text-lg font-bold uppercase">More Games Coming Soon!</h5>
+          <p class="text-gray-700 mt-2">
+            Stay tuned for exciting new games and challenges.
+          </p>
+          <a
+            href="#"
+            class="mt-4 bg-gray-500 text-white px-4 py-2 rounded-md cursor-not-allowed"
+          >
+            Coming Soon
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

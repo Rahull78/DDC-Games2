@@ -1,0 +1,114 @@
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guess the Frame - DDC Games</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="./img-src/channels4_profile.jpg" type="image/x-icon" />
+  </head>
+
+  <body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    
+    <!-- Rules Modal (Appears on Page Load) -->
+    <div id="rulesModal" class="fixed inset-0 flex items-center justify-center border border-red-400 bg-opacity-50 z-50">
+      <div class="bg-white text-center p-6 rounded-xl shadow-2xl w-96">
+        <h3 class="text-2xl font-bold text-red-600">🎬 Game Rules 🎬</h3>
+        <ul class="mt-4 text-gray-700 text-lg space-y-2">
+          <li>📌 Guess the movie from the given frame.</li>
+          <li>🎭 Click <span class="font-bold text-green-500">"Show Answer"</span> to check.</li>
+          <li>🏆 Keep track of scores in the scoreboard.</li>
+          <li>👑 Highest scorer wins the game!</li>
+        </ul>
+        <button onclick="startGame()" class="mt-5 bg-red-400 text-white px-6 py-3 rounded-lg text-lg font-bold shadow hover:text-red-400 border border-red-400 duration-500 hover:scale-105 hover:bg-white transition">
+          🎬 Start Game
+        </button>
+      </div>
+    </div>
+
+    <!-- Game Section -->
+    <div id="game-container" class="hidden flex flex-col items-center text-center p-5 w-full max-w-5xl">
+      <h3 class="text-2xl font-bold text-gray-800 mb-3">Can You Guess the Movie from this Frame?</h3>
+
+      <!-- Movie Frame -->
+      <div class="bg-gray-200 p-3 rounded-lg">
+        <img src="./img-src/image1.png" id="movie-frame" class="w-full max-w-4xl h-96 object-contain bg-gray-300 rounded-lg shadow" alt="Movie Frame" />
+      </div>
+
+      <!-- Answer Section -->
+      <p id="answer" class="hidden text-green-600 text-2xl font-semibold mt-3">
+        The movie is: <span id="movie-name"></span>
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex gap-5 mt-4 w-full max-w-md">
+        <button onclick="showAnswer()" class="w-1/2 bg-green-500 text-white px-4 py-2 rounded-lg text-lg font-semibold shadow hover:bg-green-600 transition">
+          Show Answer
+        </button>
+        <button onclick="nextFrame()" id="next-frame-btn" class="w-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg text-lg font-semibold shadow hover:bg-blue-600 transition">
+          Next Frame
+        </button>
+      </div>
+
+      <!-- Scoreboard -->
+      <div id="scoreboard" class="hidden bg-yellow-300 shadow-lg rounded-lg p-4 mt-5 w-64 text-center">
+        <h4 class="text-lg font-bold text-gray-800 mb-2">Scoreboard</h4>
+
+        <!-- Player: Suraj -->
+        <div class="flex justify-between items-center mt-2">
+          <span class="text-lg">Suraj</span>
+          <div class="flex gap-2">
+            <button onclick="updateScore('suraj', 1)" class="bg-green-500 text-white px-3 py-1 rounded-md shadow hover:bg-green-600 transition">+</button>
+            <span id="score-suraj" class="text-xl font-semibold">0</span>
+            <button onclick="updateScore('suraj', -1)" class="bg-red-500 text-white px-3 py-1 rounded-md shadow hover:bg-red-600 transition">−</button>
+          </div>
+        </div>
+
+        <!-- Player: Yogi -->
+        <div class="flex justify-between items-center mt-3">
+          <span class="text-lg">Yogi</span>
+          <div class="flex gap-2">
+            <button onclick="updateScore('yogi', 1)" class="bg-green-500 text-white px-3 py-1 rounded-md shadow hover:bg-green-600 transition">+</button>
+            <span id="score-yogi" class="text-xl font-semibold">0</span>
+            <button onclick="updateScore('yogi', -1)" class="bg-red-500 text-white px-3 py-1 rounded-md shadow hover:bg-red-600 transition">−</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Score Table -->
+    <div id="final-scoreboard" class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 z-50">
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center w-96">
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Final Scores</h3>
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="border border-gray-300 px-4 py-2">Player</th>
+              <th class="border border-gray-300 px-4 py-2">Score</th>
+            </tr>
+          </thead>
+          <tbody id="score-table-body"></tbody>
+        </table>
+        <button onclick="restartGame()" class="mt-4 bg-blue-600 text-white px-5 py-2 rounded-lg font-bold shadow hover:bg-blue-700 transition">
+          Back to Homepage
+        </button>
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="./guess-the-frame.js"></script>
+
+    <script>
+      // Function to start the game after rules modal
+      function startGame() {
+        document.getElementById("rulesModal").classList.add("hidden");
+        document.getElementById("game-container").classList.remove("hidden");
+        document.getElementById("scoreboard").classList.remove("hidden");
+      }
+    </script>
+
+  </body>
+</html>
