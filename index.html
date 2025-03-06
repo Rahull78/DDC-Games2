@@ -3,60 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dil Dosti Cinema</title>
-    <link rel="shortcut icon" href="./img-src/hero.png" type="image/x-icon">
-    <link rel="stylesheet" href="output.css.css">
+    <title>Test Dil Dosti Cinema</title>
+    <link rel="shortcut icon" href="./img-src/hero.png" type="image/x-icon" />
+    <link rel="stylesheet" href="output.css.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-50">
+  <body class="">
     <!-- Navbar -->
-    <nav class="flex justify-around items-center p-6">
-      <div class="text-blue-500 text-3xl font-bold">DDC</div>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#" class="text-blue-500 font-semibold">Home</a></li>
-        <li><a href="#" class="text-gray-700">About Us</a></li>
-        <li><a href="#" class="text-gray-700">Games</a></li>
-        <li><a href="#" class="text-gray-700">Recommendations</a></li>
-      </ul>
-      <div class="flex items-center space-x-4">
-        <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
-          Contact
-        </button>
+    <nav class="flex justify-around items-center p-6 gap-96">
+      <div class="hover:text-white text-red-400 hover:border hover:bg-red-400 duration-500 border-red-400 px-4 py-2 text-2xl rounded-xl font-bold">
+        <a href="">DDC</a>
       </div>
+      <ul class="hidden md:flex space-x-6">
+        <li>
+          <a
+            href="#"
+            class="bg-red-400 hover:bg-white text-white px-4 py-2 rounded-lg hover:text-red-400 border duration-500 hover:border-red-400"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="games.html"
+            class="bg-red-400 hover:bg-white text-white px-4 py-2 rounded-lg hover:text-red-400 border duration-500 hover:border-red-400"
+            >Games</a
+          >
+        </li>
+      </ul>
+    
     </nav>
+    <!-- Navbar srction Ends -->
 
     <!-- Hero Section -->
-    <section
-      class="flex flex-col md:flex-row items-center justify-around mx-auto py-16 px-10"
-    >
-      <div class="md:w-1/2 space-y-6">
-        <h1 class="text-4xl font-bold">
-          Dil Se Jude Hue Dosto Ki <br> Cinemabhari
-          <span class="text-blue-500">Baatein</span>
-        </h1>
-        <p class="text-gray-600">
-          Where Friendship Meets Frames, Every Story Connects Us,<br> and Cinema Sparks Meaningful Conversations.
-        </p>
-        <div class="flex space-x-4">
-          <button class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg">
-            Order Now
-          </button>
-          <button class="flex items-center space-x-2 text-gray-700">
-            <span>Watch Video</span>
-            <span
-              class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full"
-              >▶</span
+    <section id="heroSection" class="container w-full mx-auto my-10 px-4">
+      <!-- Outer div -->
+      <div
+        class="flex flex-col-reverse md:flex-row justify-center items-center sm:p-8 gap-14 py-5"
+      >
+        <!-- First div for text -->
+        <div class="text-center md:text-left px-8 py-8 max-w-2xl">
+          <h1
+            class="text-2xl sm:text-4xl md:text-4xl py-5 leading-tight uppercase"
+          >
+            Dil Se Jude Huwe
+            <span class="text-red-400">Dosto</span> ki,<br />Cinemabhari
+            <span class="text-red-400">Baatein</span>
+          </h1>
+          <h3 class="py-3">
+            Where Friendship Meets Frames, Every Story Connects Us,<br />
+            and Cinema Sparks Meaningful Conversations.
+          </h3>
+          <div class="py-3 uppercase">
+            <a
+              class="bg-red-400 text-white text-sm sm:text-base rounded-lg py-2 px-4 inline-block hover:bg-transparent hover:text-blue-500 hover:border hover:border-blue-500 duration-500 border border-transparent"
+              href="https://www.youtube.com/@DilDostiCinema"
+              target="_blank"
+              >SEE CHANNEL</a
             >
-          </button>
+          </div>
+        </div>
+
+        <!-- Second div for image -->
+        <div class="flex justify-center">
+          <img
+            class="w-64 sm:w-80 md:w-[450px] lg:w-[600px] xl:w-[750px] shadow-2xl"
+            src="./img-src/hero.png"
+            alt="HeroSectionImage"
+          />
         </div>
       </div>
-      <div class="md:w-1/2 mt-10 md:mt-0 relative">
-        <img
-          src="./img-src/hero.png"
-          alt="Food Image"
-          class="w-full rounded-lg shadow-lg"
-        />
+    </section>
+
+    <!-- Popular Categories Section -->
+    <section class="max-w-5xl w-full px-6 py-12 text-center mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-[#FF6868]">
+        CHANNEL CREATORS
+      </h2>
+
+      <div class="flex flex-wrap justify-center items-center gap-16">
+        <!-- Category Card -->
+        <a
+          href="https://www.youtube.com/@ABHIKAREVIEW"
+          target="_blank"
+          class="bg-[#FF6868] hover:bg-white text-white w-60 h-64 p-8 rounded-2xl border hover:border-red-400 shadow-2xl transition hover:scale-105 hover:text-black hover:shadow-2xl duration-500 flex flex-col items-center"
+        >
+          <img
+            src="./img-src/Abhi.jpg"
+            alt="ABHI KA REVIEW"
+            class="w-40 h-40 rounded-full bg-green-100 p-2 object-cover"
+          />
+          <h3 class="mt-6 font-semibold text-lg">ABHI KA REVIEW</h3>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@SurajKumarReview"
+          target="_blank"
+          class="bg-[#FF6868] hover:bg-white text-white w-60 h-64 p-8 rounded-2xl shadow-lg transition border hover:border-red-400 hover:scale-105 hover:text-black hover:shadow-2xl duration-500 flex flex-col items-center"
+        >
+          <img
+            src="./img-src/Suraj.jpg"
+            alt="SURAJ KUMAR REVIEWS"
+            class="w-40 h-40 rounded-full bg-green-100 p-2 object-cover"
+          />
+          <h3 class="mt-6 font-semibold text-lg">SURAJ KUMAR</h3>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@yogiboltahai"
+          target="_blank"
+          class="bg-[#FF6868] hover:bg-white text-white w-60 h-64 p-8 rounded-2xl shadow-lg transition border hover:border-red-400 hover:scale-105 hover:text-black hover:shadow-2xl duration-500 flex flex-col items-center"
+        >
+          <img
+            src="./img-src/Yogi.jpg"
+            alt="YOGI BOLTA HAI"
+            class="w-40 h-40 rounded-full bg-green-100 p-2 object-cover"
+          />
+          <h3 class="mt-6 font-semibold text-lg">YOGI BOLTA HAI</h3>
+        </a>
       </div>
     </section>
+
+    <!-- About us Section -->
+    <!-- Centered Section -->
+    <section
+      class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center mx-auto p-6 md:p-10 rounded-3xl md:gap-32"
+    >
+      <!-- Left: Image -->
+      <div class="flex justify-center md:justify-end w-full md:w-1/2">
+        <img
+          src="./img-src/hero.png"
+          alt="Chef"
+          class="w-[550px] md:w-[800px]"
+        />
+      </div>
+      <!-- Right: Content -->
+      <div
+        class="flex flex-col justify-center w-full md:w-1/2 text-center md:text-left"
+      >
+        <h2 class="text-red-400 text-2xl md:text-4xl font-bold mt-2 uppercase">
+          Dil Dosti Cinema – More Than Just Podcasts!
+        </h2>
+        <!-- Text -->
+        <p class="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
+          “What happens when three passionate movie lovers come together? A
+          perfect mix of Dil (heartfelt emotions), Dosti (unbreakable
+          friendship), and Cinema (endless stories)! Meet Abhi, Suraj, and Yogi,
+          the trio behind "Dil Dosti Cinema", where movies and series are just
+          the beginning. From breaking down iconic scenes to discussing life’s
+          biggest questions, they bring you a space filled with insightful
+          discussions, laughter, and pure entertainment.
+
+        <!-- Buttons -->
+        <div class="mt-6 flex justify-center md:justify-start">
+          <a
+            href="https://www.youtube.com/@DilDostiCinema"
+            target="_blank"
+            class="hover:bg-gray-800 duration-500 text-white px-5 py-2 rounded-lg flex items-center gap-2 text-sm font-medium bg-red-400 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              class="w-5 h-5"
+            >
+              <path
+                d="M8.051 1.999c-3.124 0-5.708.586-5.708.586S0 3.662 0 5.578v4.844c0 1.916 2.343 2.78 2.343 2.78s2.584.586 5.708.586c3.124 0 5.708-.586 5.708-.586s2.343-.864 2.343-2.78V5.578c0-1.916-2.343-2.78-2.343-2.78S11.175 1.999 8.051 1.999zm-1.558 3.864l4.734 2.47-4.734 2.47V5.863z"
+              />
+            </svg>
+            Watch Now
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- About us Section Ends-->
+
+    <!-- Membership Section -->
+    <section
+      class="container w-full flex flex-col md:flex-row items-center justify-center mx-auto p-6 md:p-16 rounded-3xl md:gap-32"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-16"
+      >
+        <!-- Left Section -->
+        <div
+          class="max-w-xl md:px-16 lg:max-w-2xl space-y-6 text-start md:text-left"
+        >
+          <h2
+            class="text-red-400 text-3xl md:text-4xl uppercase font-bold leading-snug"
+          >
+            Watch DDC Membership Videos
+          </h2>
+          <p class="text-gray-600">
+            join now the channel where you fine exclusive members only content
+            like meme reaction, games and members only live stream at lowest
+            price.
+          </p>
+          <a
+            href="#"
+            class="uppercase inline-block bg-red-400 text-white font-medium px-6 py-3 rounded-full border hover:text-red-400 hover:border-red-400 shadow-md hover:bg-white transition duration-500"
+          >
+            join now
+          </a>
+        </div>
+
+        <!-- Right Section (YouTube Thumbnails with Shadow & Hover) -->
+        <div class="grid grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+          <div
+            class="bg-white w-[280px] rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <a href="https://www.youtube.com/@DilDostiCinema"
+              ><img
+                src="./img-src/member1.avif"
+                alt="YouTube Thumbnail"
+                class="w-full"
+            /></a>
+          </div>
+          <div
+            class="bg-white w-[280px] rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <a href="https://www.youtube.com/@DilDostiCinema">
+              <img
+                src="./img-src/member2.avif"
+                alt="YouTube Thumbnail"
+                class="w-full"
+            /></a>
+          </div>
+          <div
+            class="bg-white w-[280px] rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <a href="https://www.youtube.com/@DilDostiCinema">
+              <img
+                src="./img-src/member3.avif"
+                alt="YouTube Thumbnail"
+                class="w-full"
+            /></a>
+          </div>
+          <div
+            class="bg-white w-[280px] rounded-xl shadow-xl overflow-hidden hover:shadow-2xl hover:scale-105 transition duration-300 ease-in-out"
+          >
+            <a href="https://www.youtube.com/@DilDostiCinema">
+              <img
+                src="./img-src/member4.avif"
+                alt="YouTube Thumbnail"
+                class="w-full"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Membership Ends here -->
+
+    <!-- Footer -->
+    <footer class="bg-blue-50 py-8">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-around"
+      >
+        <div class="flex items-center mb-4 md:mb-0">
+          <a href=""><p class="hover:text-red-400 font-semibold text-2xl">DDC</p></a>
+        </div>
+
+        <nav class="flex space-x-4 mb-4 md:mb-0">
+          <a href="#" class="text-gray-700 hover:text-red-400">Home</a>
+          <!-- <a href="./about_us.html" class="text-gray-700 hover:text-red-400">About Us</a> -->
+          <a href="./games.html" class="text-gray-700 hover:text-red-400">Games</a>
+        </nav>
+
+        <div class="flex space-x-4">
+          <a href="https://www.facebook.com/DilDostiCinema" class="text-gray-700 hover:text-gray-900"
+            ><img src="./img-src/Facebook.svg" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/dildosticinema" class="text-gray-700 hover:text-gray-900"
+            ><img src="./img-src/Instagram.svg" alt="Instagram"
+          /></a>
+          <a href="https://x.com/DilDostiCinema" class="text-gray-700 hover:text-gray-900"
+            ><img src="./img-src/tweeter.svg" alt="tweeter"
+          /></a>
+          <a href="https://www.whatsapp.com/channel/0029VaFsDBxD8SE4Iwl1fX3K" class="text-gray-700 hover:text-gray-900"
+            ><img src="./img-src/whatsapp.svg" alt="whatsapp"
+          /></a>
+        </div>
+      </div>
+
+      <hr class="border-t border-gray-300 my-6" />
+
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-around text-sm text-gray-600"
+      >
+        <div class="mb-4 md:mb-0">
+          Made By <a href="https://www.instagram.com/rahul_modi_7788/"><span class="text-red-500">RAHUL MODI</span></a>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#" class="hover:underline">Cookies Settings</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ends here -->
   </body>
 </html>

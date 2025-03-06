@@ -133,7 +133,7 @@ const frames = [
   {
     src: "./img-src/image28.png",
     name: "Bholaa",
-    poster: "./img-src/answer28.jpg",
+    poster: "./img-src/answer28.avif",
   },
   {
     src: "./img-src/image29.png",
@@ -198,23 +198,23 @@ function showAnswer() {
 
 // Switch to next frame instantly using cached images
 function nextFrame() {
-  currentFrameIndex++;
-  if (currentFrameIndex < frames.length) {
-    const movieFrame = document.getElementById("movie-frame");
-
-    // Use preloaded image if available
-    movieFrame.src =
-      imageCache[frames[currentFrameIndex].src]?.src ||
-      frames[currentFrameIndex].src;
-
-    isAnswerShown = false; // Reset the flag
-
-    if (currentFrameIndex === frames.length - 1) {
-      document.getElementById("next-frame-btn").textContent = "View Score";
-    }
-  } else {
-    document.getElementById("game-container").classList.add("d-none");
+  if (currentFrameIndex === frames.length - 1) {
+    // Last frame, show final scores
+    document.getElementById("game-container").classList.add("hidden");
     showFinalScores();
+  } else {
+    // Not the last frame, proceed to next frame
+    currentFrameIndex++;
+    if (currentFrameIndex < frames.length) {
+      const movieFrame = document.getElementById("movie-frame");
+      movieFrame.src =
+        imageCache[frames[currentFrameIndex].src]?.src ||
+        frames[currentFrameIndex].src;
+      isAnswerShown = false;
+      if (currentFrameIndex === frames.length - 1) {
+        document.getElementById("next-frame-btn").textContent = "View Score";
+      }
+    }
   }
 }
 
@@ -224,27 +224,29 @@ function showFinalScores() {
   const scoreTableBody = document.getElementById("score-table-body");
   scoreTableBody.innerHTML = "";
 
-  // Fetch scores and store them as objects
   let scores = players.map((player) => ({
     name: player.charAt(0).toUpperCase() + player.slice(1),
     score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
   }));
 
-  // Sort scores in descending order
   scores.sort((a, b) => b.score - a.score);
 
-  // Display sorted scores in table
   scores.forEach((player) => {
     scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
   });
 
-  document.getElementById("final-scoreboard").classList.remove("d-none");
+  document.getElementById("final-scoreboard").classList.remove("hidden");
 }
 
 // Restart the game and go back to homepage
 function restartGame() {
   window.location.href = "index.html";
 }
+
+window.onload = () => {
+  preloadImages();
+  resetScores();
+};
 
 // Reset scores at the start of the game
 function resetScores() {
