@@ -218,24 +218,37 @@ function nextFrame() {
   }
 }
 
+// Switch to previous frame instantly using cached images
+function previousFrame() {
+    if (currentFrameIndex > 0) {
+        currentFrameIndex--;
+        const movieFrame = document.getElementById("movie-frame");
+        movieFrame.src =
+            imageCache[frames[currentFrameIndex].src]?.src ||
+            frames[currentFrameIndex].src;
+        isAnswerShown = false;
+        document.getElementById("next-frame-btn").textContent = "Next Frame";
+    }
+}
+
 // Display the final scores at the end
 function showFinalScores() {
-  const players = ["suraj", "yogi"];
-  const scoreTableBody = document.getElementById("score-table-body");
-  scoreTableBody.innerHTML = "";
+    const players = ["abhi", "suraj", "yogi"]; // Added abhi
+    const scoreTableBody = document.getElementById("score-table-body");
+    scoreTableBody.innerHTML = "";
 
-  let scores = players.map((player) => ({
-    name: player.charAt(0).toUpperCase() + player.slice(1),
-    score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
-  }));
+    let scores = players.map((player) => ({
+        name: player.charAt(0).toUpperCase() + player.slice(1),
+        score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
+    }));
 
-  scores.sort((a, b) => b.score - a.score);
+    scores.sort((a, b) => b.score - a.score);
 
-  scores.forEach((player) => {
-    scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
-  });
+    scores.forEach((player) => {
+        scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
+    });
 
-  document.getElementById("final-scoreboard").classList.remove("hidden");
+    document.getElementById("final-scoreboard").classList.remove("hidden");
 }
 
 // Restart the game and go back to homepage
@@ -250,10 +263,10 @@ window.onload = () => {
 
 // Reset scores at the start of the game
 function resetScores() {
-  ["suraj", "yogi"].forEach((player) => {
-    localStorage.setItem(`score-${player}`, "0");
-    document.getElementById(`score-${player}`).textContent = "0";
-  });
+    ["abhi", "suraj", "yogi"].forEach((player) => { // Added abhi
+        localStorage.setItem(`score-${player}`, "0");
+        document.getElementById(`score-${player}`).textContent = "0";
+    });
 }
 
 // Update player scores

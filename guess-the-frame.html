@@ -67,15 +67,22 @@
       <!-- Buttons -->
       <div class="flex gap-5 mt-4 w-full max-w-md">
         <button
+          onclick="previousFrame()"
+          id="previous-frame-btn"
+          class="w-1/3 bg-white text-gray-500 border border-gray-500 px-4 py-2 rounded-lg text-lg font-semibold shadow hover:bg-gray-600 hover:text-white duration-500 hover:scale-105 transition"
+        >
+          Previous Frame
+        </button>
+        <button
           onclick="showAnswer()"
-          class="w-1/2 bg-white text-green-500 px-4 py-2 rounded-lg text-lg font-semibold shadow border border-green-500 hover:bg-green-600 hover:text-white duration-500 hover:scale-105 transition"
+          class="w-1/3 bg-white text-green-500 px-4 py-2 rounded-lg text-lg font-semibold shadow border border-green-500 hover:bg-green-600 hover:text-white duration-500 hover:scale-105 transition"
         >
           Show Answer
         </button>
         <button
           onclick="nextFrame()"
           id="next-frame-btn"
-          class="w-1/2 bg-white text-blue-500 border border-blue-500 px-4 py-2 rounded-lg text-lg font-semibold shadow hover:bg-blue-600 hover:text-white duration-500 hover:scale-105 transition"
+          class="w-1/3 bg-white text-blue-500 border border-blue-500 px-4 py-2 rounded-lg text-lg font-semibold shadow hover:bg-blue-600 hover:text-white duration-500 hover:scale-105 transition"
         >
           Next Frame
         </button>
@@ -88,8 +95,26 @@
       >
         <h4 class="text-lg font-bold text-gray-800 mb-2">Scoreboard</h4>
 
-        <!-- Player: Suraj -->
         <div class="flex justify-between items-center mt-2">
+          <span class="text-lg">Abhi</span>
+          <div class="flex gap-2">
+            <button
+              onclick="updateScore('abhi', 1)"
+              class="bg-green-500 text-white px-3 py-1 rounded-md shadow hover:bg-green-600 transition"
+            >
+              +
+            </button>
+            <span id="score-abhi" class="text-xl font-semibold">0</span>
+            <button
+              onclick="updateScore('abhi', -1)"
+              class="bg-red-500 text-white px-3 py-1 rounded-md shadow hover:bg-red-600 transition"
+            >
+              −
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-3">
           <span class="text-lg">Suraj</span>
           <div class="flex gap-2">
             <button
@@ -108,7 +133,6 @@
           </div>
         </div>
 
-        <!-- Player: Yogi -->
         <div class="flex justify-between items-center mt-3">
           <span class="text-lg">Yogi</span>
           <div class="flex gap-2">
