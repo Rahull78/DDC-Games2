@@ -1,169 +1,188 @@
 const frames = [
   {
     src: "./img-src/image1.png",
-    name: "Badass Ravikumar",
-    poster: "./img-src/answer1.webp",
+    name: "Gehraiyaan",
+    poster: "./img-src/answer1.jpg",
   },
   {
     src: "./img-src/image2.png",
-    name: "Ala Vaikunthapurramuloo",
+    name: "Samrat Prithviraj",
     poster: "./img-src/answer2.jpg",
   },
   {
     src: "./img-src/image3.png",
-    name: "A Thursday",
-    poster: "./img-src/answer3.jpg",
+    name: "Darlings",
+    poster: "./img-src/answer3.avif",
   },
   {
     src: "./img-src/image4.png",
-    name: "Badhaai Do",
+    name: "Chup Revenge of the Artist",
     poster: "./img-src/answer4.jpg",
   },
-  { src: "./img-src/image5.png", name: "83", poster: "./img-src/answer5.jpg" },
+  {
+    src: "./img-src/image5.png",
+    name: "Black Adam",
+    poster: "./img-src/answer5.png",
+  },
   {
     src: "./img-src/image6.png",
-    name: "Dasvi",
+    name: "Goodbye",
     poster: "./img-src/answer6.jpg",
   },
   {
     src: "./img-src/image7.png",
-    name: "Bachchan Pandey",
-    poster: "./img-src/answer7.webp",
+    name: "Drishyam 2",
+    poster: "./img-src/answer7.avif",
   },
   {
-    src: "./img-src/image8.png",
-    name: "Beast",
+    src: "./img-src/image88.png",
+    name: "Black Panther: Wakanda Forever",
     poster: "./img-src/answer8.jpg",
   },
   {
     src: "./img-src/image9.png",
-    name: "Heropanti 2",
+    name: "Kuttey",
     poster: "./img-src/answer9.jpg",
   },
   {
     src: "./img-src/image10.png",
-    name: "Attack",
-    poster: "./img-src/answer10.jpg",
+    name: "Shehzada",
+    poster: "./img-src/answer10.webp",
   },
   {
     src: "./img-src/image11.png",
-    name: "Jayeshbhai Jordaar",
+    name: "Kabzaa",
     poster: "./img-src/answer11.jpg",
   },
   {
     src: "./img-src/image12.png",
-    name: "Jaadugar",
+    name: "Evil Dead Rise",
     poster: "./img-src/answer12.jpg",
   },
   {
     src: "./img-src/image13.png",
-    name: "Bhool Bhulaiyaa 2",
+    name: "Kisi Ka Bhai Kisi Ki Jaan",
     poster: "./img-src/answer13.jpg",
   },
   {
     src: "./img-src/image14.png",
-    name: "Shamshera",
+    name: "Sooryavandhi",
     poster: "./img-src/answer14.jpg",
   },
   {
     src: "./img-src/image15.png",
-    name: "Dhokha: Round D Corner",
-    poster: "./img-src/answer15.jpg",
+    name: "Adipurush",
+    poster: "./img-src/answer15.webp",
   },
   {
     src: "./img-src/image16.png",
-    name: "Freddy",
-    poster: "./img-src/answer16.webp",
+    name: "Sita Ramam",
+    poster: "./img-src/answer16.avif",
   },
   {
     src: "./img-src/image17.png",
-    name: "Monica O My Darling",
-    poster: "./img-src/answer17.webp",
+    name: "IB71",
+    poster: "./img-src/answer17.jpg",
   },
   {
     src: "./img-src/image18.png",
-    name: "Ram Setu",
-    poster: "./img-src/answer18.jpg",
+    name: "The Diplomat",
+    poster: "./img-src/answer18.avif",
   },
   {
     src: "./img-src/image19.png",
-    name: "An Action Hero",
-    poster: "./img-src/answer19.jpg",
+    name: "Sardar Udham",
+    poster: "./img-src/answer19.webp",
   },
   {
     src: "./img-src/image20.png",
-    name: "Karthikeya 2",
+    name: "The Flash",
     poster: "./img-src/answer20.jpg",
   },
   {
     src: "./img-src/image21.png",
-    name: "Mission Majnu",
+    name: "Atrangi Re",
     poster: "./img-src/answer21.jpg",
   },
   {
     src: "./img-src/image22.png",
-    name: "Tiger Zinda Hai",
+    name: "Radhe Shyam",
     poster: "./img-src/answer22.jpg",
   },
   {
     src: "./img-src/image23.png",
-    name: "Vadh",
+    name: "Guardians of the Galaxy Vol. 3",
     poster: "./img-src/answer23.jpg",
   },
   {
     src: "./img-src/image24.png",
-    name: "Salaam Venky",
+    name: "Bhuj: The Pride of India",
     poster: "./img-src/answer24.jpg",
   },
   {
     src: "./img-src/image25.png",
-    name: "Pathaan",
+    name: "Anek",
     poster: "./img-src/answer25.jpg",
   },
   {
     src: "./img-src/image26.png",
-    name: "Chor Nikal Ke Bhaga",
+    name: "vedaa",
     poster: "./img-src/answer26.jpg",
   },
   {
     src: "./img-src/image27.png",
-    name: "Tu Jhoothi Main Makkaar",
+    name: "Dhoom3",
     poster: "./img-src/answer27.jpg",
   },
   {
     src: "./img-src/image28.png",
-    name: "Bholaa",
-    poster: "./img-src/answer28.avif",
+    name: "Race 3",
+    poster: "./img-src/answer28.jpg",
   },
   {
     src: "./img-src/image29.png",
-    name: "Valaty : Tales of Tails",
-    poster: "./img-src/answer29.webp",
+    name: "Angrezi Medium",
+    poster: "./img-src/answer29.jpg",
   },
   {
     src: "./img-src/image30.png",
-    name: "Falimy",
-    poster: "./img-src/answer30.webp",
+    name: "Bharat",
+    poster: "./img-src/answer30.jpg",
   },
   {
     src: "./img-src/image31.png",
-    name: "Parking",
+    name: "Kalank",
     poster: "./img-src/answer31.jpg",
   },
   {
     src: "./img-src/image32.png",
-    name: "Mukundan Unni Associates",
+    name: "Uncharted",
     poster: "./img-src/answer32.jpg",
   },
   {
     src: "./img-src/image33.png",
-    name: "Guruvayoor Ambalanadayil",
+    name: "Cirkus",
     poster: "./img-src/answer33.webp",
   },
   {
     src: "./img-src/image34.png",
-    name: "August 16 1947",
-    poster: "./img-src/answer34.avif",
+    name: "Govinda Naam Mera",
+    poster: "./img-src/answer34.jpg",
+  },
+  {
+    src: "./img-src/image35.png",
+    name: "Oppenheimer",
+    poster: "./img-src/answer35.jpg",
+  },
+  {
+    src: "./img-src/image36.png",
+    name: "Bad Boys: Ride or Die",
+    poster: "./img-src/answer36.jpg",
+  },
+  {
+    src: "./img-src/image37.png",
+    name: "Teraa Surroor",
+    poster: "./img-src/answer37.jpg",
   },
 ];
 
@@ -220,35 +239,35 @@ function nextFrame() {
 
 // Switch to previous frame instantly using cached images
 function previousFrame() {
-    if (currentFrameIndex > 0) {
-        currentFrameIndex--;
-        const movieFrame = document.getElementById("movie-frame");
-        movieFrame.src =
-            imageCache[frames[currentFrameIndex].src]?.src ||
-            frames[currentFrameIndex].src;
-        isAnswerShown = false;
-        document.getElementById("next-frame-btn").textContent = "Next Frame";
-    }
+  if (currentFrameIndex > 0) {
+    currentFrameIndex--;
+    const movieFrame = document.getElementById("movie-frame");
+    movieFrame.src =
+      imageCache[frames[currentFrameIndex].src]?.src ||
+      frames[currentFrameIndex].src;
+    isAnswerShown = false;
+    document.getElementById("next-frame-btn").textContent = "Next Frame";
+  }
 }
 
 // Display the final scores at the end
 function showFinalScores() {
-    const players = ["abhi", "suraj", "yogi"]; // Added abhi
-    const scoreTableBody = document.getElementById("score-table-body");
-    scoreTableBody.innerHTML = "";
+  const players = ["abhi", "suraj", "yogi"]; // Added abhi
+  const scoreTableBody = document.getElementById("score-table-body");
+  scoreTableBody.innerHTML = "";
 
-    let scores = players.map((player) => ({
-        name: player.charAt(0).toUpperCase() + player.slice(1),
-        score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
-    }));
+  let scores = players.map((player) => ({
+    name: player.charAt(0).toUpperCase() + player.slice(1),
+    score: parseInt(localStorage.getItem(`score-${player}`) || "0"),
+  }));
 
-    scores.sort((a, b) => b.score - a.score);
+  scores.sort((a, b) => b.score - a.score);
 
-    scores.forEach((player) => {
-        scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
-    });
+  scores.forEach((player) => {
+    scoreTableBody.innerHTML += `<tr><td>${player.name}</td><td>${player.score}</td></tr>`;
+  });
 
-    document.getElementById("final-scoreboard").classList.remove("hidden");
+  document.getElementById("final-scoreboard").classList.remove("hidden");
 }
 
 // Restart the game and go back to homepage
@@ -263,10 +282,11 @@ window.onload = () => {
 
 // Reset scores at the start of the game
 function resetScores() {
-    ["abhi", "suraj", "yogi"].forEach((player) => { // Added abhi
-        localStorage.setItem(`score-${player}`, "0");
-        document.getElementById(`score-${player}`).textContent = "0";
-    });
+  ["abhi", "suraj", "yogi"].forEach((player) => {
+    // Added abhi
+    localStorage.setItem(`score-${player}`, "0");
+    document.getElementById(`score-${player}`).textContent = "0";
+  });
 }
 
 // Update player scores
