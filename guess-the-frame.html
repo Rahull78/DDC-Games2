@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Guess the Frame - DDC Games</title>
-<link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
 
     <link rel="shortcut icon" href="./img-src/hero.png" type="image/x-icon" />
   </head>
@@ -53,7 +53,7 @@
       <!-- Movie Frame -->
       <div class="bg-gray-200 rounded-lg">
         <img
-          src="./img-src/image1.png"
+          src="./img-src/image111.png"
           id="movie-frame"
           class="w-[1180px] h-[580px] object-contain bg-gray-300 rounded-lg shadow"
           alt="Movie Frame"
@@ -156,70 +156,74 @@
     </div>
 
     <div
-    id="final-scoreboard"
-    class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 z-50"
->
-    <div class="bg-white p-8 rounded-2xl shadow-2xl text-center w-full max-w-md">
+      id="final-scoreboard"
+      class="hidden fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-70 z-50"
+    >
+      <div
+        class="bg-white p-8 rounded-2xl shadow-2xl text-center w-full max-w-md"
+      >
         <h3 class="text-3xl font-bold text-gray-800 mb-6">Final Scores</h3>
 
         <table class="w-full border-collapse rounded-xl overflow-hidden mb-6">
-            <thead>
-                <tr class="bg-gray-100">
-                    <th class="py-3 px-4 text-center font-semibold text-gray-700">
-                        Player
-                    </th>
-                    <th class="py-3 px-4 text-center font-semibold text-gray-700">
-                        Score
-                    </th>
-                </tr>
-            </thead>
-            <tbody id="score-table-body"></tbody>
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="py-3 px-4 text-center font-semibold text-gray-700">
+                Player
+              </th>
+              <th class="py-3 px-4 text-center font-semibold text-gray-700">
+                Score
+              </th>
+            </tr>
+          </thead>
+          <tbody id="score-table-body"></tbody>
         </table>
 
         <div class="mt-8">
-            <img
-                src="./img-src/GPayQR.jpg"
-                alt="Google Pay QR Code"
-                class="w-48 h-48 mx-auto mb-4 rounded-lg shadow-md"
-            />
-            <p class="text-lg text-gray-700 mb-2">Support me!</p>
-            <p class="text-lg font-semibold text-gray-800 mb-4">CREATED BY: Rahul Modi</p>
-            <div class="flex justify-center items-center space-x-4 mb-4">
-                <a
-                    href="https://www.instagram.com/rahul_modi_7788/"
-                    target="_blank"
-                    class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300"
-                >
-                    <img
-                        src="./img-src/Instagram.svg"
-                        alt="Instagram"
-                        class="w-6 h-6"
-                    />
-                    <span>rahul_modi_7788</span>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/rahul-modi-ab8818253/"
-                    target="_blank"
-                    class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300"
-                >
-                    <img
-                        src="./img-src/icons8-linkedin-144.png"
-                        alt="LinkedIn"
-                        class="w-6 h-6"
-                    />
-                    <span>Rahul Modi</span>
-                </a>
-            </div>
+          <img
+            src="./img-src/GPayQR.jpg"
+            alt="Google Pay QR Code"
+            class="w-48 h-48 mx-auto mb-4 rounded-lg shadow-md"
+          />
+          <p class="text-lg text-gray-700 mb-2">Support me!</p>
+          <p class="text-lg font-semibold text-gray-800 mb-4">
+            CREATED BY: Rahul Modi
+          </p>
+          <div class="flex justify-center items-center space-x-4 mb-4">
+            <a
+              href="https://www.instagram.com/rahul_modi_7788/"
+              target="_blank"
+              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300"
+            >
+              <img
+                src="./img-src/Instagram.svg"
+                alt="Instagram"
+                class="w-6 h-6"
+              />
+              <span>rahul_modi_7788</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rahul-modi-ab8818253/"
+              target="_blank"
+              class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition duration-300"
+            >
+              <img
+                src="./img-src/icons8-linkedin-144.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+              />
+              <span>Rahul Modi</span>
+            </a>
+          </div>
         </div>
 
         <button
-            onclick="restartGame()"
-            class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold shadow-md transition duration-300"
+          onclick="restartGame()"
+          class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold shadow-md transition duration-300"
         >
-            Back to Homepage
+          Back to Homepage
         </button>
+      </div>
     </div>
-</div>
 
     <!-- External JavaScript -->
     <script src="./guess-the-frame.js"></script>

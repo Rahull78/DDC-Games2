@@ -302,3 +302,16 @@ window.onload = () => {
   preloadImages(); // Start preloading images
   resetScores(); // Reset player scores
 };
+
+const movieFrame = document.getElementById("movie-frame");
+const loadingSkeleton = document.getElementById("loading-skeleton");
+
+movieFrame.onload = function () {
+  loadingSkeleton.style.display = "none"; // Hide the skeleton
+  movieFrame.classList.remove("hidden"); // Show the image
+};
+
+movieFrame.onerror = function () {
+  loadingSkeleton.style.display = "none"; // hide skeleton if image fails to load.
+  console.error("Image failed to load.");
+};
