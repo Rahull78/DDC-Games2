@@ -1,188 +1,178 @@
 const frames = [
   {
-    src: "./img-src/image111.png",
-    name: "Gehraiyaan",
-    poster: "./img-src/answer111.jpg",
+    src: "./img-src/image1.png",
+    name: "Simmba",
+    poster: "./img-src/answer1.jpg",
   },
   {
-    src: "./img-src/image222.png",
-    name: "Samrat Prithviraj",
+    src: "./img-src/image2.png",
+    name: "Saaho",
     poster: "./img-src/answer2.jpg",
   },
   {
-    src: "./img-src/image333.png",
-    name: "Darlings",
+    src: "./img-src/image3.png",
+    name: "Vikram",
     poster: "./img-src/answer3.jpg",
   },
   {
-    src: "./img-src/image444.png",
-    name: "Chup Revenge of the Artist",
+    src: "./img-src/image4.png",
+    name: "Hit the First Case",
     poster: "./img-src/answer4.jpg",
   },
   {
-    src: "./img-src/image555.png",
-    name: "Black Adam",
-    poster: "./img-src/answer555.png",
+    src: "./img-src/image5.png",
+    name: "Final Destination",
+    poster: "./img-src/answer5.jpg",
   },
   {
-    src: "./img-src/image666.png",
-    name: "Goodbye",
+    src: "./img-src/image6.png",
+    name: "Tere Ishq Mein",
     poster: "./img-src/answer6.jpg",
   },
   {
-    src: "./img-src/image777.png",
-    name: "Drishyam 2",
+    src: "./img-src/image7.png",
+    name: "Ek Villain Returns",
     poster: "./img-src/answer7.jpg",
   },
   {
-    src: "./img-src/image888.png",
-    name: "Black Panther: Wakanda Forever",
-    poster: "./img-src/answer888.jpg",
+    src: "./img-src/image8.png",
+    name: "The Sabarmati Report",
+    poster: "./img-src/answer8.jpg",
   },
   {
-    src: "./img-src/image999.png",
-    name: "Kuttey",
+    src: "./img-src/image9.png",
+    name: "Chandu Champion",
     poster: "./img-src/answer9.jpg",
   },
   {
-    src: "./img-src/image100.png",
-    name: "Shehzada",
-    poster: "./img-src/answer10.webp",
+    src: "./img-src/image10.png",
+    name: "Venom The Last Dance",
+    poster: "./img-src/answer10.png",
   },
   {
-    src: "./img-src/image1111.png",
-    name: "Kabzaa",
+    src: "./img-src/image11.png",
+    name: "Joker 2",
     poster: "./img-src/answer11.jpg",
   },
   {
-    src: "./img-src/image122.png",
-    name: "Evil Dead Rise",
-    poster: "./img-src/answer122.jpg",
+    src: "./img-src/image12.png",
+    name: "Rocky Aur Rani Kii Prem Kahaani",
+    poster: "./img-src/answer12.jpg",
   },
   {
-    src: "./img-src/image133.png",
-    name: "Kisi Ka Bhai Kisi Ki Jaan",
+    src: "./img-src/image13.png",
+    name: "Bawaal",
     poster: "./img-src/answer13.jpg",
   },
   {
-    src: "./img-src/image144.png",
-    name: "Sooryavandhi",
+    src: "./img-src/image14.png",
+    name: "Fast X",
     poster: "./img-src/answer14.jpg",
   },
   {
-    src: "./img-src/image155.png",
-    name: "Adipurush",
-    poster: "./img-src/answer15.webp",
+    src: "./img-src/image15.png",
+    name: "Premalu",
+    poster: "./img-src/answer15.jpg",
   },
   {
-    src: "./img-src/image166.png",
-    name: "Sita Ramam",
+    src: "./img-src/image16.png",
+    name: "Dream Girl",
     poster: "./img-src/answer16.jpg",
   },
   {
-    src: "./img-src/image177.png",
-    name: "IB71",
+    src: "./img-src/image17.png",
+    name: "Guntur Kaaram",
     poster: "./img-src/answer17.jpg",
   },
   {
-    src: "./img-src/image188.png",
-    name: "The Diplomat",
+    src: "./img-src/image18.png",
+    name: "Vijay The Master",
     poster: "./img-src/answer18.jpg",
   },
   {
-    src: "./img-src/image199.png",
-    name: "Sardar Udham",
-    poster: "./img-src/answer19.webp",
+    src: "./img-src/image19.png",
+    name: "Jersey",
+    poster: "./img-src/answer19.jpg",
   },
   {
-    src: "./img-src/image200.png",
-    name: "The Flash",
-    poster: "./img-src/answer200.jpg",
+    src: "./img-src/image20.png",
+    name: "The Meg 2",
+    poster: "./img-src/answer20.jpg",
   },
   {
-    src: "./img-src/image211.png",
-    name: "Atrangi Re",
+    src: "./img-src/image21.png",
+    name: "Article 370",
     poster: "./img-src/answer21.jpg",
   },
   {
-    src: "./img-src/image2222.png",
-    name: "Radhe Shyam",
+    src: "./img-src/image22.png",
+    name: "Vash",
     poster: "./img-src/answer22.jpg",
   },
   {
-    src: "./img-src/image233.png",
-    name: "Guardians of the Galaxy Vol. 3",
-    poster: "./img-src/answer233.jpg",
+    src: "./img-src/image23.png",
+    name: "Chal Jeevi Laiye",
+    poster: "./img-src/answer23.jpg",
   },
   {
-    src: "./img-src/image244.png",
-    name: "Bhuj: The Pride of India",
+    src: "./img-src/image24.png",
+    name: "Ludo",
     poster: "./img-src/answer24.jpg",
   },
   {
-    src: "./img-src/image255.png",
-    name: "Anek",
+    src: "./img-src/image25.png",
+    name: "Free Guy",
     poster: "./img-src/answer25.jpg",
   },
   {
     src: "./img-src/image26.png",
-    name: "vedaa",
+    name: "Godzilla Vs Kong",
     poster: "./img-src/answer26.jpg",
   },
   {
-    src: "./img-src/image277.png",
-    name: "Dhoom3",
+    src: "./img-src/image27.png",
+    name: "Bullet Train",
     poster: "./img-src/answer27.jpg",
   },
   {
-    src: "./img-src/image288.png",
-    name: "Race 3",
+    src: "./img-src/image28.png",
+    name: "Bhediya",
     poster: "./img-src/answer28.jpg",
   },
   {
-    src: "./img-src/image299.png",
-    name: "Angrezi Medium",
+    src: "./img-src/image29.png",
+    name: "Vaazha",
     poster: "./img-src/answer29.jpg",
   },
   {
-    src: "./img-src/image300.png",
-    name: "Bharat",
+    src: "./img-src/image30.png",
+    name: "Nani's Hit: The Third Case",
     poster: "./img-src/answer30.jpg",
   },
   {
-    src: "./img-src/image311.png",
-    name: "Kalank",
+    src: "./img-src/image31.png",
+    name: "Saripodhaa Sanivaaram",
     poster: "./img-src/answer31.jpg",
   },
   {
-    src: "./img-src/image322.png",
-    name: "Uncharted",
+    src: "./img-src/image32.png",
+    name: "Hanu-Man",
     poster: "./img-src/answer32.jpg",
   },
   {
-    src: "./img-src/image3333.png",
-    name: "Cirkus",
-    poster: "./img-src/answer333.webp",
+    src: "./img-src/image33.png",
+    name: "Mard Ko Dard Nahi Hota",
+    poster: "./img-src/answer33.jpg",
   },
   {
-    src: "./img-src/image344.png",
-    name: "Govinda Naam Mera",
+    src: "./img-src/image34.png",
+    name: "Srikanth",
     poster: "./img-src/answer34.jpg",
   },
   {
-    src: "./img-src/image355.png",
-    name: "Oppenheimer",
+    src: "./img-src/image35.png",
+    name: "Hi Nanna",
     poster: "./img-src/answer35.jpg",
-  },
-  {
-    src: "./img-src/image366.png",
-    name: "Bad Boys: Ride or Die",
-    poster: "./img-src/answer366.jpg",
-  },
-  {
-    src: "./img-src/image377.png",
-    name: "Teraa Surroor",
-    poster: "./img-src/answer37.jpg",
   },
 ];
 
@@ -301,17 +291,4 @@ function updateScore(player, change) {
 window.onload = () => {
   preloadImages(); // Start preloading images
   resetScores(); // Reset player scores
-};
-
-const movieFrame = document.getElementById("movie-frame");
-const loadingSkeleton = document.getElementById("loading-skeleton");
-
-movieFrame.onload = function () {
-  loadingSkeleton.style.display = "none"; // Hide the skeleton
-  movieFrame.classList.remove("hidden"); // Show the image
-};
-
-movieFrame.onerror = function () {
-  loadingSkeleton.style.display = "none"; // hide skeleton if image fails to load.
-  console.error("Image failed to load.");
 };
