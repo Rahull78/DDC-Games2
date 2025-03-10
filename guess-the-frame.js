@@ -177,12 +177,10 @@ const frames = [
 ];
 
 let currentFrameIndex = 0;
-let isAnswerShown = false; // Track whether the answer is displayed
+let isAnswerShown = false;
 
-// Store preloaded images
 const imageCache = {};
 
-// Preload images on page load
 function preloadImages() {
   frames.forEach((frame) => {
     const imgFrame = new Image();
@@ -195,24 +193,19 @@ function preloadImages() {
   });
 }
 
-// Show answer by replacing the frame with the movie poster
 function showAnswer() {
   const movieFrame = document.getElementById("movie-frame");
-
   if (!isAnswerShown) {
     movieFrame.src = frames[currentFrameIndex].poster;
     isAnswerShown = true;
   }
 }
 
-// Switch to next frame instantly using cached images
 function nextFrame() {
   if (currentFrameIndex === frames.length - 1) {
-    // Last frame, show final scores
     document.getElementById("game-container").classList.add("hidden");
     showFinalScores();
   } else {
-    // Not the last frame, proceed to next frame
     currentFrameIndex++;
     if (currentFrameIndex < frames.length) {
       const movieFrame = document.getElementById("movie-frame");
@@ -227,7 +220,6 @@ function nextFrame() {
   }
 }
 
-// Switch to previous frame instantly using cached images
 function previousFrame() {
   if (currentFrameIndex > 0) {
     currentFrameIndex--;
@@ -240,9 +232,8 @@ function previousFrame() {
   }
 }
 
-// Display the final scores at the end
 function showFinalScores() {
-  const players = ["abhi", "suraj", "yogi"]; // Added abhi
+  const players = ["shubham", "suraj", "yogi", "bhurani"]; // Updated player list
   const scoreTableBody = document.getElementById("score-table-body");
   scoreTableBody.innerHTML = "";
 
@@ -260,7 +251,6 @@ function showFinalScores() {
   document.getElementById("final-scoreboard").classList.remove("hidden");
 }
 
-// Restart the game and go back to homepage
 function restartGame() {
   window.location.href = "index.html";
 }
@@ -270,16 +260,14 @@ window.onload = () => {
   resetScores();
 };
 
-// Reset scores at the start of the game
 function resetScores() {
-  ["abhi", "suraj", "yogi"].forEach((player) => {
-    // Added abhi
+  ["shubham", "suraj", "yogi", "bhurani"].forEach((player) => {
+    // Updated player list
     localStorage.setItem(`score-${player}`, "0");
     document.getElementById(`score-${player}`).textContent = "0";
   });
 }
 
-// Update player scores
 function updateScore(player, change) {
   let score = parseInt(localStorage.getItem(`score-${player}`) || "0") + change;
   score = Math.max(0, score);
@@ -287,8 +275,7 @@ function updateScore(player, change) {
   document.getElementById(`score-${player}`).textContent = score;
 }
 
-// Preload images and reset scores when page loads
 window.onload = () => {
-  preloadImages(); // Start preloading images
-  resetScores(); // Reset player scores
+  preloadImages();
+  resetScores();
 };
